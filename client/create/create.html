@@ -1,0 +1,79 @@
+<head>
+  <title>demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <h1>Welcome to MY Demo Project!</h1>
+ 
+</body>
+
+<template name="hello">
+  
+  <!-- <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p> -->
+
+  <form name='data' class='data'>
+    <div class="container">
+      <h1>Register</h1>
+      <p>Please fill in this form.</p>
+      <hr>
+      <label for="user"><b>username</b></label>
+      <input type="text" placeholder="Enter username" name="username" class="form-control" id="user" required>
+      <br><br>
+
+      <label for="password"><b>password</b></label>
+      <input type="password" placeholder="Enter password" name="password" class="form-control" required>
+      <br><br>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter email" name="email" class="form-control" id="email" required>
+      <br><br>
+      <!-- <label for="Blog Title"><b>Blog Title</b></label>
+      <input type="text" placeholder="Enter Blog title" name="blog_title" class="form-control" required>
+      <br><br>
+
+      <label for="Blog Description"><b>Blog Description</b></label>
+      <input type="text" placeholder="Enter Blog Description" name="blog_description" class="form-control" required>
+      <br><br>
+      <label for="Blog Author"><b>Blog Author</b></label>
+      <input type="text" placeholder="Enter Blog Author" name="blog_author" class="form-control" required>
+      <br><br>
+      <label for="Blog Image"><b>Blog Image</b></label>
+      <input type="text" placeholder="Enter Blog Image" name="blog_image" class="form-control" required>
+      <br><br>
+      <label for="Blog type"><b>Blog type</b></label>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Educational
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Educational</a></li>
+          <li><a href="#">Scientific</a></li>
+          <li><a href="#">Sports</a></li>
+        </ul>
+      </div>
+      {{#each fun}}
+      {{/each}}
+      <br><br>
+      
+       -->
+      <button type="submit" class="registerbtn btn btn-primary">Register</button>
+    </div>
+    
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form>
+</template>
+
+<template name="forTest">
+  <p> hey just for test purpose</p>
+</template>
+
+<template name="loading">
+  <p> still loading</p>
+</template>

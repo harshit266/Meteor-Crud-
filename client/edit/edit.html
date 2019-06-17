@@ -1,0 +1,41 @@
+<head>
+  <title>demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+ <h1>Edit this form </h1>
+ 
+</body>
+
+<template name="edit">
+    <form name='data' class='data'>
+      <div class="container">
+        <hr>
+        {{#each func}}
+        <label for="user"><b>username</b> </label>
+        <input type="text" value= {{name}} name="username" class="form-control" id="user" required>
+        <br><br>
+      
+        <label for="password"><b>password</b></label>
+        <input type="password" value="Enter password" name="password" class="form-control" required>
+        <br><br>
+  
+        <label for="email"><b>Email</b></label>
+        <input type="text" value={{email}} name="email" class="form-control" id="email" required>
+        <br><br>
+        
+        <button type="submit" class="registerbtn">Register</button>
+        {{/each}}
+      </div>
+      
+      <div class="container signin">
+        <p>Already have an account? <a href="#">Sign in</a>.</p>
+      </div>
+    </form>
+  </template>
+  
